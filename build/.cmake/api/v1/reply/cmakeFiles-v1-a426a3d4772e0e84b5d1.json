@@ -145,7 +145,7 @@
 			"path" : "UI/menubar.xml"
 		},
 		{
-			"path" : "UI/toolbar.xml"
+			"path" : "UI/main_container.xml"
 		},
 		{
 			"isCMake" : true,

@@ -287,6 +287,9 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=/usr/bin/git
+
 //Command to build the project
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 
@@ -315,46 +318,25 @@ image_processing_IS_TOP_LEVEL:STATIC=ON
 image_processing_SOURCE_DIR:STATIC=/home/user/projects/image_processing
 
 //Path to a library.
-pkgcfg_lib_GTKMM_atk-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libatk-1.0.so
-
-//Path to a library.
-pkgcfg_lib_GTKMM_atkmm-1.6:FILEPATH=/usr/lib/x86_64-linux-gnu/libatkmm-1.6.so
-
-//Path to a library.
 pkgcfg_lib_GTKMM_cairo:FILEPATH=/usr/lib/x86_64-linux-gnu/libcairo.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_cairo-gobject:FILEPATH=/usr/lib/x86_64-linux-gnu/libcairo-gobject.so
 
 //Path to a library.
-pkgcfg_lib_GTKMM_cairomm-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libcairomm-1.0.so
-
-//Path to a library.
 pkgcfg_lib_GTKMM_cairomm-1.16:FILEPATH=/usr/lib/libcairomm-1.16.so
-
-//Path to a library.
-pkgcfg_lib_GTKMM_gdk-3:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdk-3.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_gdk_pixbuf-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so
 
 //Path to a library.
-pkgcfg_lib_GTKMM_gdkmm-3.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdkmm-3.0.so
-
-//Path to a library.
 pkgcfg_lib_GTKMM_gio-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgio-2.0.so
-
-//Path to a library.
-pkgcfg_lib_GTKMM_giomm-2.4:FILEPATH=/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_giomm-2.68:FILEPATH=/usr/lib/libgiomm-2.68.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_glib-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.so
-
-//Path to a library.
-pkgcfg_lib_GTKMM_glibmm-2.4:FILEPATH=/usr/lib/x86_64-linux-gnu/libglibmm-2.4.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_glibmm-2.68:FILEPATH=/usr/lib/libglibmm-2.68.so
@@ -366,13 +348,7 @@ pkgcfg_lib_GTKMM_gobject-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgobject-2.0.s
 pkgcfg_lib_GTKMM_graphene-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgraphene-1.0.so
 
 //Path to a library.
-pkgcfg_lib_GTKMM_gtk-3:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtk-3.so
-
-//Path to a library.
 pkgcfg_lib_GTKMM_gtk-4:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtk-4.so
-
-//Path to a library.
-pkgcfg_lib_GTKMM_gtkmm-3.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtkmm-3.0.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_gtkmm-4.0:FILEPATH=/usr/lib/libgtkmm-4.0.so
@@ -387,13 +363,7 @@ pkgcfg_lib_GTKMM_pango-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libpango-1.0.so
 pkgcfg_lib_GTKMM_pangocairo-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so
 
 //Path to a library.
-pkgcfg_lib_GTKMM_pangomm-1.4:FILEPATH=/usr/lib/x86_64-linux-gnu/libpangomm-1.4.so
-
-//Path to a library.
 pkgcfg_lib_GTKMM_pangomm-2.48:FILEPATH=/usr/lib/libpangomm-2.48.so
-
-//Path to a library.
-pkgcfg_lib_GTKMM_sigc-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libsigc-2.0.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_sigc-3.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libsigc-3.0.so
@@ -588,6 +558,8 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 GTKMM_CFLAGS:INTERNAL=-mfpmath=sse;-msse;-msse2;-pthread;-I/usr/include/sigc++-3.0;-I/usr/lib/x86_64-linux-gnu/sigc++-3.0/include;-I/usr/include/gtk-4.0/unix-print;-I/usr/include/gtk-4.0;-I/usr/include/gio-unix-2.0;-I/usr/include/cairo;-I/usr/include/pango-1.0;-I/usr/include/harfbuzz;-I/usr/include/pango-1.0;-I/usr/include/fribidi;-I/usr/include/harfbuzz;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/x86_64-linux-gnu;-I/usr/include/cairo;-I/usr/include/pixman-1;-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/graphene-1.0;-I/usr/lib/x86_64-linux-gnu/graphene-1.0/include;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include/gtkmm-4.0;-I/usr/lib/gtkmm-4.0/include;-I/usr/include/pangomm-2.48;-I/usr/lib/pangomm-2.48/include;-I/usr/include/giomm-2.68;-I/usr/lib/giomm-2.68/include;-I/usr/include/glibmm-2.68;-I/usr/lib/glibmm-2.68/include;-I/usr/include/cairomm-1.16;-I/usr/lib/cairomm-1.16/include
 GTKMM_CFLAGS_I:INTERNAL=
 GTKMM_CFLAGS_OTHER:INTERNAL=-mfpmath=sse;-msse;-msse2;-pthread
@@ -619,10 +591,6 @@ GTKMM_STATIC_LIBS_L:INTERNAL=
 GTKMM_STATIC_LIBS_OTHER:INTERNAL=
 GTKMM_STATIC_LIBS_PATHS:INTERNAL=
 GTKMM_VERSION:INTERNAL=4.6.1
-GTKMM_gtkmm-3.0_INCLUDEDIR:INTERNAL=
-GTKMM_gtkmm-3.0_LIBDIR:INTERNAL=
-GTKMM_gtkmm-3.0_PREFIX:INTERNAL=
-GTKMM_gtkmm-3.0_VERSION:INTERNAL=
 GTKMM_gtkmm-4.0_INCLUDEDIR:INTERNAL=
 GTKMM_gtkmm-4.0_LIBDIR:INTERNAL=
 GTKMM_gtkmm-4.0_PREFIX:INTERNAL=
@@ -641,46 +609,28 @@ PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 SITE-ADVANCED:INTERNAL=1
 __pkg_config_arguments_GTKMM:INTERNAL=REQUIRED;gtkmm-4.0
 __pkg_config_checked_GTKMM:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_atk-1.0
-pkgcfg_lib_GTKMM_atk-1.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_atkmm-1.6
-pkgcfg_lib_GTKMM_atkmm-1.6-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_cairo
 pkgcfg_lib_GTKMM_cairo-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_cairo-gobject
 pkgcfg_lib_GTKMM_cairo-gobject-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairomm-1.0
-pkgcfg_lib_GTKMM_cairomm-1.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_cairomm-1.16
 pkgcfg_lib_GTKMM_cairomm-1.16-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdk-3
-pkgcfg_lib_GTKMM_gdk-3-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_gdk_pixbuf-2.0
 pkgcfg_lib_GTKMM_gdk_pixbuf-2.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdkmm-3.0
-pkgcfg_lib_GTKMM_gdkmm-3.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_gio-2.0
 pkgcfg_lib_GTKMM_gio-2.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_giomm-2.4
-pkgcfg_lib_GTKMM_giomm-2.4-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_giomm-2.68
 pkgcfg_lib_GTKMM_giomm-2.68-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_glib-2.0
 pkgcfg_lib_GTKMM_glib-2.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_glibmm-2.4
-pkgcfg_lib_GTKMM_glibmm-2.4-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_glibmm-2.68
 pkgcfg_lib_GTKMM_glibmm-2.68-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_gobject-2.0
 pkgcfg_lib_GTKMM_gobject-2.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_graphene-1.0
 pkgcfg_lib_GTKMM_graphene-1.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_gtk-3
-pkgcfg_lib_GTKMM_gtk-3-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_gtk-4
 pkgcfg_lib_GTKMM_gtk-4-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_gtkmm-3.0
-pkgcfg_lib_GTKMM_gtkmm-3.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_gtkmm-4.0
 pkgcfg_lib_GTKMM_gtkmm-4.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_harfbuzz
@@ -689,12 +639,8 @@ pkgcfg_lib_GTKMM_harfbuzz-ADVANCED:INTERNAL=1
 pkgcfg_lib_GTKMM_pango-1.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_pangocairo-1.0
 pkgcfg_lib_GTKMM_pangocairo-1.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_pangomm-1.4
-pkgcfg_lib_GTKMM_pangomm-1.4-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_pangomm-2.48
 pkgcfg_lib_GTKMM_pangomm-2.48-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GTKMM_sigc-2.0
-pkgcfg_lib_GTKMM_sigc-2.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTKMM_sigc-3.0
 pkgcfg_lib_GTKMM_sigc-3.0-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/lib

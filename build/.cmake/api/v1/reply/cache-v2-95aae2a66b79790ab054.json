@@ -1583,11 +1583,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/git"
 		},
 		{
 			"name" : "GTKMM_CFLAGS",
@@ -1962,54 +1962,6 @@
 			"value" : "4.6.1"
 		},
 		{
-			"name" : "GTKMM_gtkmm-3.0_INCLUDEDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "GTKMM_gtkmm-3.0_LIBDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "GTKMM_gtkmm-3.0_PREFIX",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "GTKMM_gtkmm-3.0_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
 			"name" : "GTKMM_gtkmm-4.0_INCLUDEDIR",
 			"properties" : 
 			[
@@ -2262,38 +2214,6 @@
 			"value" : "/home/user/projects/image_processing"
 		},
 		{
-			"name" : "pkgcfg_lib_GTKMM_atk-1.0",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libatk-1.0.so"
-		},
-		{
-			"name" : "pkgcfg_lib_GTKMM_atkmm-1.6",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libatkmm-1.6.so"
-		},
-		{
 			"name" : "pkgcfg_lib_GTKMM_cairo",
 			"properties" : 
 			[
@@ -2326,22 +2246,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libcairo-gobject.so"
 		},
 		{
-			"name" : "pkgcfg_lib_GTKMM_cairomm-1.0",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libcairomm-1.0.so"
-		},
-		{
 			"name" : "pkgcfg_lib_GTKMM_cairomm-1.16",
 			"properties" : 
 			[
@@ -2356,22 +2260,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/libcairomm-1.16.so"
-		},
-		{
-			"name" : "pkgcfg_lib_GTKMM_gdk-3",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libgdk-3.so"
 		},
 		{
 			"name" : "pkgcfg_lib_GTKMM_gdk_pixbuf-2.0",
@@ -2390,22 +2278,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so"
 		},
 		{
-			"name" : "pkgcfg_lib_GTKMM_gdkmm-3.0",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libgdkmm-3.0.so"
-		},
-		{
 			"name" : "pkgcfg_lib_GTKMM_gio-2.0",
 			"properties" : 
 			[
@@ -2420,22 +2292,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libgio-2.0.so"
-		},
-		{
-			"name" : "pkgcfg_lib_GTKMM_giomm-2.4",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so"
 		},
 		{
 			"name" : "pkgcfg_lib_GTKMM_giomm-2.68",
@@ -2468,22 +2324,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so"
-		},
-		{
-			"name" : "pkgcfg_lib_GTKMM_glibmm-2.4",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libglibmm-2.4.so"
 		},
 		{
 			"name" : "pkgcfg_lib_GTKMM_glibmm-2.68",
@@ -2534,22 +2374,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libgraphene-1.0.so"
 		},
 		{
-			"name" : "pkgcfg_lib_GTKMM_gtk-3",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libgtk-3.so"
-		},
-		{
 			"name" : "pkgcfg_lib_GTKMM_gtk-4",
 			"properties" : 
 			[
@@ -2564,22 +2388,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libgtk-4.so"
-		},
-		{
-			"name" : "pkgcfg_lib_GTKMM_gtkmm-3.0",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libgtkmm-3.0.so"
 		},
 		{
 			"name" : "pkgcfg_lib_GTKMM_gtkmm-4.0",
@@ -2646,22 +2454,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so"
 		},
 		{
-			"name" : "pkgcfg_lib_GTKMM_pangomm-1.4",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libpangomm-1.4.so"
-		},
-		{
 			"name" : "pkgcfg_lib_GTKMM_pangomm-2.48",
 			"properties" : 
 			[
@@ -2676,22 +2468,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/libpangomm-2.48.so"
-		},
-		{
-			"name" : "pkgcfg_lib_GTKMM_sigc-2.0",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libsigc-2.0.so"
 		},
 		{
 			"name" : "pkgcfg_lib_GTKMM_sigc-3.0",

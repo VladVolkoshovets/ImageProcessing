@@ -10,12 +10,12 @@ include_directories(include)
 # List of UI files to copy
 set(UI_FILES
     menubar.xml
-    toolbar.xml
+    main_container.xml
 )
 
 # Copy UI files to the build directory
 foreach(UI_FILE ${UI_FILES})
-    configure_file(UI/${UI_FILE} ${CMAKE_CURRENT_BINARY_DIR}/${UI_FILE} COPYONLY)
+    configure_file(UI/${UI_FILE} ${CMAKE_CURRENT_BINARY_DIR}/UI/${UI_FILE} COPYONLY)
 endforeach()
 
 find_package(PkgConfig REQUIRED)

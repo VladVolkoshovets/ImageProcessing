@@ -7,7 +7,8 @@ MainWindow::MainWindow()
   m_Box(Gtk::Orientation::VERTICAL)
 {
   set_title("Image processing");
-  set_default_size(300, 100);
+  set_default_size(800, 600);
+  
 
   // ImageApp displays the menubar. Other stuff, such as a toolbar,
   // is put into the box.
@@ -41,18 +42,18 @@ MainWindow::MainWindow()
   //Create the toolbar and add it to a container widget:
   try
   {
-    m_refBuilder = Gtk::Builder::create_from_file("UI/toolbar.xml");
+    m_refBuilder = Gtk::Builder::create_from_file("UI/main_container.xml");
   }
   catch (const Glib::Error& ex)
   {
     std::cerr << "Building toolbar failed: " <<  ex.what();
   }
 
-  auto toolbar = m_refBuilder->get_widget<Gtk::Box>("toolbar");
-  if (!toolbar)
-    g_warning("toolbar not found");
+  auto main_container = m_refBuilder->get_widget<Gtk::Paned>("main_container");
+  if (!main_container)
+    g_warning("main_container not found");
   else
-    m_Box.append(*toolbar);
+    m_Box.append(*main_container);
 }
 
 MainWindow::~MainWindow()
